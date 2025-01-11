@@ -8,9 +8,9 @@ function App() {
     <div className="app-container" style={styles.container}>
       {/* Background Music */}
       <audio autoPlay loop>
-        <source src="/Savera.mp3" type="audio/mp3" />
-        Your browser does not support the audio element.
-      </audio>
+  <source src={`${process.env.PUBLIC_URL}/Savera.mp3`} type="audio/mp3" />
+  Your browser does not support the audio element.
+</audio>
 
       <header style={styles.header}>
         <h1 style={styles.title}>I'm Sorry Cuties!</h1>
@@ -18,18 +18,16 @@ function App() {
         <div style={styles.heartRow}>❤️ ❤️ ❤️ ❤️ ❤️ ❤️ ❤️</div>
       </header>
 
-      <div style={styles.imageContainer}>
-        <img
-          src="/Screenshot 2025-01-11 034157.png"
-          alt="Cute Image 1"
-          style={styles.image}
-        />
-        <img
-          src="/Screenshot 2025-01-11 173812.png"
-          alt="Cute Image 2"
-          style={styles.image}
-        />
-      </div>
+     <img
+  src={`${process.env.PUBLIC_URL}/Screenshot 2025-01-11 034157.png`}
+  alt="Cute Image 1"
+  style={styles.image}
+/>
+<img
+  src={`${process.env.PUBLIC_URL}/Screenshot 2025-01-11 173812.png`}
+  alt="Cute Image 2"
+  style={styles.image}
+/>
 
       <button
         style={styles.button}
